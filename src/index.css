@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+.btn-click{
+    @apply
+    bg-[#f25c05] text-white font-bold py-3 px-8 rounded-[50px] hover:bg-[#d44d04] transition duration-300
+    cursor-pointer
+}
+
+.btn-hover{
+    @apply
+    border-2 text-gray-900 font-bold py-3 px-8 rounded-[50px] border-[#f25c05] bg-white
+    cursor-pointer hover:bg-[#f25c05] hover:text-white transition duration-300
+}
+
+
+.btn-primary-red {
+    @apply bg-[#ef233c] text-white font-serif font-bold px-6 py-2 rounded-lg 
+           transition-all duration-300 hover:bg-[#d90429] hover:shadow-lg 
+           active:scale-95 text-sm md:text-base whitespace-nowrap;
+    }
+
+.btn-outline-red {
+    @apply border-2 border-[#ef233c] text-[#ef233c] font-serif font-bold px-6 py-2 rounded-lg 
+           transition-all duration-300 hover:bg-[#ef233c] hover:text-white hover:shadow-lg 
+           active:scale-95 text-sm md:text-base whitespace-nowrap;
+    }
+
+.btn-ghost-white {
+    @apply border border-white/40 bg-white/10 backdrop-blur-sm text-white 
+           font-serif px-6 py-2.5 rounded-md transition-all duration-300 
+           hover:bg-white/20 hover:border-white text-sm md:text-base;
+  }
+
+.expertise-card {
+    @apply bg-[#fdfcfb] border border-gray-100 p-8 rounded-xl transition-all 
+           duration-300 hover:shadow-xl hover:-translate-y-2 flex flex-col items-start;
+  }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
