@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom'; // Import routing components
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import logo from '../assets/logo1.png';
 
@@ -6,30 +7,42 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  // Helper function to handle active link styling
+  const navLinkStyles = ({ isActive }) => (
+    isActive 
+      ? 'text-[#ef233c] border-b-2 border-[#ef233c] pb-1 font-bold' 
+      : 'text-gray-800 hover:text-[#ef233c] transition-colors'
+  );
+
   return (
-    // Changed bg-white to bg-white/80 and added backdrop-blur
     <nav className='fixed w-full h-[64px] flex justify-between items-center px-6 md:px-16 bg-white/80 backdrop-blur-md text-[#333] z-50 border-b border-white/20 shadow-sm'>
       
-      {/* Logo Section */}
-      <div className='flex items-center gap-3'>
+      {/* Logo Section - Uses Link to return Home */}
+      <Link to="/" className='flex items-center gap-3'>
         <img className='w-20 h-auto' src={logo} alt="logo" />
         <h1 className='text-xl md:text-2xl font-serif font-bold tracking-tight'>
           Chef Bimba Nayak
         </h1>
-      </div>
+      </Link>
 
       {/* Desktop Menu */}
       <div className='hidden md:flex items-center gap-10'>
-        <ul className='flex gap-x-8 font-serif text-[15px] text-gray-800'>
-          <li className='cursor-pointer hover:text-[#ef233c] transition-colors'>Home</li>
-          <li className='cursor-pointer hover:text-[#ef233c] transition-colors'>About</li>
-          <li className='cursor-pointer hover:text-[#ef233c] transition-colors'>Classes</li>
-          <li className='cursor-pointer hover:text-[#ef233c] transition-colors'>Gallery</li>
-          <li className='cursor-pointer hover:text-[#ef233c] transition-colors'>Contact</li>
+        <ul className='flex gap-x-8 font-serif text-[15px]'>
+          <li>
+            <NavLink to="/" className={navLinkStyles}>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={navLinkStyles}>About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/recipes" className={navLinkStyles}>Recipes</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={navLinkStyles}>Contact</NavLink>
+          </li>
         </ul>
 
-        {/* Reusable Button */}
-        <button className='btn-outline-red py-1.5 px-5 text-sm'>
+        <button className='btn-primary-red'>
           Book a Class
         </button>
       </div>
@@ -48,11 +61,19 @@ const Navbar = () => {
         }
       >
         <ul className='flex flex-col gap-8 text-center font-serif text-2xl'>
-          <li onClick={handleClick} className='cursor-pointer'>Home</li>
-          <li onClick={handleClick} className='cursor-pointer'>About</li>
-          <li onClick={handleClick} className='cursor-pointer'>Classes</li>
-          <li onClick={handleClick} className='cursor-pointer'>Contact</li>
-          <button onClick={handleClick} className='btn-outline-red mt-4'>
+          <li onClick={handleClick}>
+            <NavLink to="/" className={navLinkStyles}>Home</NavLink>
+          </li>
+          <li onClick={handleClick}>
+            <NavLink to="/about" className={navLinkStyles}>About</NavLink>
+          </li>
+          <li onClick={handleClick}>
+            <NavLink to="/recipes" className={navLinkStyles}>Recipes</NavLink>
+          </li>
+          <li onClick={handleClick}>
+            <NavLink to="/contact" className={navLinkStyles}>Contact</NavLink>
+          </li>
+          <button onClick={handleClick} className='btn-primary-red mt-6'>
             Book a Class
           </button>
         </ul>

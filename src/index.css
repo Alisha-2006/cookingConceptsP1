@@ -1,22 +1,8 @@
 @import "tailwindcss";
 
-.btn-click{
-    @apply
-    bg-[#f25c05] text-white font-bold py-3 px-8 rounded-[50px] hover:bg-[#d44d04] transition duration-300
-    cursor-pointer
-}
-
-.btn-hover{
-    @apply
-    border-2 text-gray-900 font-bold py-3 px-8 rounded-[50px] border-[#f25c05] bg-white
-    cursor-pointer hover:bg-[#f25c05] hover:text-white transition duration-300
-}
-
 
 .btn-primary-red {
-    @apply bg-[#ef233c] text-white font-serif font-bold px-6 py-2 rounded-lg 
-           transition-all duration-300 hover:bg-[#d90429] hover:shadow-lg 
-           active:scale-95 text-sm md:text-base whitespace-nowrap;
+    @apply bg-[#ef233c] text-white font-serif font-bold px-6 py-2 rounded-lg transition-all duration-300 hover:bg-[#d90429] hover:shadow-lg active:scale-95 text-sm md:text-base whitespace-nowrap;
     }
 
 .btn-outline-red {

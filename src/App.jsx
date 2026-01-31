@@ -1,16 +1,36 @@
-import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
-import About from './components/About.jsx'
-import Expertise from './components/Expertise.jsx'
-import Works from './components/Works.jsx'
-import Testimonials from './components/Testimonals.jsx'
-import Footer from './components/Footer.jsx'
-import AboutChef from './components/AboutChef.jsx'
+import Home from './pages/Home.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollTop.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import About from './pages/About.jsx';
+// import Classes from './pages/Classes.jsx';
+// import Gallery from './pages/Gallery.jsx';
+// import Contact from './pages/Contact.jsx';
 
 function App() {
 
   return (
-    <div>
+    
+    <Router>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/Classes" element={<Classes />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Contact" element={<Contact />} /> */}
+        </Routes>
+        <Footer />
+    </Router>
+  )
+}
+
+export default App
+
+
+{/* <div>
       <Navbar />
       <Hero />
       <About />
@@ -18,8 +38,4 @@ function App() {
       <Works />
       <Testimonials />
       <Footer />
-    </div>
-  )
-}
-
-export default App
+    </div> */}
