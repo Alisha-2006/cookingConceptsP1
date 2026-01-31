@@ -23,7 +23,7 @@ const Expertise = () => {
   ];
 
   return (
-    <section className="w-full py-16 md:py-24 bg-[#fdfaf8]">
+    <section className="w-full py-16 md:py-24 bg-[#fae0e3]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         
         {/* Header Section */}

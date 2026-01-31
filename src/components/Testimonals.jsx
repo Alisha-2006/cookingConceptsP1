@@ -53,7 +53,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 bg-[#fdfaf8] overflow-hidden">
+    <section className="w-full py-16 md:py-24 bg-[#fae0e3] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         <div className="relative flex flex-col items-center mb-12 md:mb-16">
