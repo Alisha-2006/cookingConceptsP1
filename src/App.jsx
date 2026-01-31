@@ -18,7 +18,6 @@ function App() {
       <Works />
       <Testimonials />
       <Footer />
-      <AboutChef />
     </div>
   )
 }
