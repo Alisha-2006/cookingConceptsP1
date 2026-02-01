@@ -11,7 +11,7 @@ const ChefMission = () => {
 
         {/* The Quote */}
         <h2 className="text-xl md:text-4xl lg:text-[2.6rem] font-serif font-medium italic text-gray-900 leading-[1.3] mb-12 tracking-tight">
-          "Preserving the Pathare Prabhu cuisine isn't just about recipes; it's about keeping the soul of our community alive for future generations."
+          "Preserving our culinary heritage is a labor of love; it's about keeping the soul of our community alive for future generations."
         </h2>
 
         {/* Bottom Label with Decorative Lines in #ef233c */}

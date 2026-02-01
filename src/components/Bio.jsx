@@ -47,14 +47,6 @@ const Bio = () => {
             </p>
           </div>
 
-          <div className="mt-8 md:mt-10 flex flex-row items-center justify-center md:justify-start gap-4 w-full sm:w-auto">
-            <button className="btn-primary-red ">
-              Read Her Story
-            </button>
-            <button className="btn-outline-red ">
-              View Portfolio
-            </button>
-          </div>
         </div>
 
       </div>
