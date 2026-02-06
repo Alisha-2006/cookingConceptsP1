@@ -41,7 +41,7 @@ const Bio = () => {
             Heritage Guardian.
           </h2>
           
-          <div className="space-y-4 md:space-y-6 text-[#a68b77] text-sm md:text-base leading-relaxed max-w-sm md:max-w-md">
+          <div className="space-y-4 md:space-y-6 text-gray-600 text-sm md:text-base leading-relaxed max-w-sm md:max-w-md">
             <p>
               From 1972 to Today: A Life in Flavor. Discover the journey of Chef Bimba Nayak as she bridges the gap between delicate sugar art and robust traditional cuisine.
             </p>

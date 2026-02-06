@@ -17,7 +17,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/journey" element={<About />} />
+          
           {/* <Route path="/Classes" element={<Classes />} />
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Contact" element={<Contact />} /> */}
@@ -30,12 +31,3 @@ function App() {
 export default App
 
 
-{/* <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Expertise />
-      <Works />
-      <Testimonials />
-      <Footer />
-    </div> */}

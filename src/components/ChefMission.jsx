@@ -1,6 +1,6 @@
 const ChefMission = () => {
   return (
-    <section className="w-full py-20 bg-[#fae0e3]">
+    <section className="w-full py-20 mb-0 bg-[#fae0e3] block overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
         
         <div className="mb-6 opacity-20">
