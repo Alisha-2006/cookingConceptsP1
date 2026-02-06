@@ -1,4 +1,3 @@
-import Bio from "../components/Bio.jsx"; 
 import ChefMission from "../components/ChefMission.jsx";
 import InfoSection from "../components/InfoSection.jsx";
 import HeritageFood from "../assets/heritageFood.jpeg";
@@ -69,7 +68,9 @@ const About = () => {
             image="http://googleusercontent.com/image_collection/image_retrieval/7898923137845845329_0"
             reverse={true} />
 
-            <ChefMission />
+            <ChefMission 
+                quote="Preserving our culinary heritage is a labor of love; it's about keeping the soul of our community alive for future generations." 
+                label="Her Mission" />
         </div>
     );
 };
