@@ -2,11 +2,12 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi';
 
+
 const RecentMasterpieces = () => {
   const scrollRef = useRef(null);
 
   const projects = [
-    { id: 1, title: "Wedding Creations", category: "Bespoke Design", image: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?q=80" },
+    { id: 1, title: "Wedding Creations", category: "Bespoke Design", image:"https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80" },
     { id: 2, title: "Classroom Moments", category: "Hands-on Learning", image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80" },
     { id: 3, title: "Gourmet Chocolates", category: "Artisan Flavors", image: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?q=80" },
     { id: 4, title: "Patisserie Art", category: "French Techniques", image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?q=80" },

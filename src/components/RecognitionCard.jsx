@@ -3,44 +3,47 @@ import { FaAward } from 'react-icons/fa';
 
 const RecognitionCard = ({ image, badge, title, organization, description }) => {
   return (
-    /* The main container handles the shadow, border-radius, and hover lift */
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:-translate-y-2 duration-300 h-full flex flex-col font-serif">
+    /* 1. Static Vertical Container */
+    /* Removed hover translation and reduced shadow for a cleaner look */
+    <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 h-full flex flex-col font-serif">
       
-      {/* Image styling: Fixed height with object-cover to prevent distortion */}
-      <div className="h-72 w-full overflow-hidden">
+      {/* 2. Scaled Image Container */}
+      {/* Fixed vertical height: 400px on desktop, 320px on mobile */}
+      <div className="h-80 sm:h-[350px] lg:h-[400px] w-full overflow-hidden">
         <img 
           src={image} 
           alt={title} 
+          /* object-cover ensures a perfect fit in the vertical rectangle */
           className="w-full h-full object-cover" 
         />
       </div>
 
-      {/* Content styling: Padding and relative positioning for the icon */}
-      <div className="p-8 relative flex-grow flex flex-col">
+      {/* 3. Refined Content Section */}
+      <div className="p-8 md:p-10 relative flex-grow flex flex-col">
         
-        {/* Absolute positioned icon to match design */}
-        <div className="absolute top-8 right-8 text-[#ef233c] text-xl opacity-80">
+        {/* Award Icon */}
+        <div className="absolute top-8 right-8 text-[#ef233c] text-2xl opacity-80 hidden sm:block">
           <FaAward />
         </div>
 
-        {/* Badge: Custom pink bg with red text */}
+        {/* Badge */}
         <div className="mb-4">
-          <span className="inline-block bg-[#fae0e3] text-[#ef233c] font-sans font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full italic">
+          <span className="inline-block bg-[#fae0e3] text-[#ef233c] font-sans font-bold text-[10px] md:text-[11px] uppercase tracking-[0.2em] px-3 py-1 rounded-full italic">
             {badge}
           </span>
         </div>
         
-        {/* Typography: Serif for titles, italic for organization */}
-        <h3 className="text-2xl font-bold text-gray-900 mb-2 leading-tight">
+        {/* Typography: Scaled for a tighter vertical profile */}
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 leading-tight tracking-tight">
           {title}
         </h3>
         
-        <p className="text-[#ef233c] italic text-sm mb-5">
+        <p className="text-[#ef233c] italic text-base font-medium mb-4">
           {organization}
         </p>
         
-        {/* Description: Leading-relaxed for better readability */}
-        <p className="text-gray-600 text-[15px] leading-relaxed">
+        {/* Description */}
+        <p className="text-gray-600 text-[15px] md:text-base leading-relaxed">
           {description}
         </p>
       </div>

@@ -1,11 +1,13 @@
 import about from '../assets/about.png';
+import image_03 from '../assets/Awards/BestLadyAward.jpeg'
+import image_01 from '../assets/Awards/award.jpeg'
 export const AwardsData = [
   {
-    image: "https://images.unsplash.com/photo-1577214195042-474efd73d46a?q=80&w=1974&auto=format&fit=crop",
+    image: image_01,
     badge: "2019 Milestone",
     title: "Lifetime Achievement Award",
     organization: "Cake Marathon International",
-    description: "Honored for her exceptional contribution to the field of baking andSugarcraft, recognizing her decades-long influence on aspiringpastry chefs."
+    description: "Honored for her exceptional contribution to the field of baking and Sugarcraft, recognizing her decades-long influence on aspiring pastry chefs."
   },
    {
     image: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop",
@@ -15,7 +17,7 @@ export const AwardsData = [
     description: "Acknowledged for her outstanding culinary skills and innovation,emphasizing her expertise in hygiene and quality in home-based cooking and baking."
   },
   {
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop",
+    image: image_03,
     badge: "2023 Excellence",
     title: "Lady Chef of the Year",
     organization: "WICA Chef Connect",
@@ -29,14 +31,6 @@ export const AwardsData = [
     description: "Recognized as a top chocolatier forher expertise in fine chocolates, intricate Sugarcraft, and premiumconfectionery. Her consistent excellence in this field has earned her this prestigious award for three consecutive years."
   }
 ];
-
-// export const publicationData = [
-//   {
-//     title: "Recipe Contributor for Kalnirnay & Swadisht Calendar (2021)",
-//     description: "Published seasonal and festiverecipes in English and Marathi, highlighting herversatility in traditional and modern cooking.",
-//     image: "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?q=80&w=2070&auto=format&fit=crop"
-//   }
-// ];
 
 export const publicationData = [
   {

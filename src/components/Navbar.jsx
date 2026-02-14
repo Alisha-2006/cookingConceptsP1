@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineDown } from 'react-icons/ai';
 import logo from '../assets/logoNew.png';
@@ -65,7 +65,7 @@ const Navbar = () => {
               </ul>
             </div>
           </li>
-          <li><NavLink to="/recipes" className={navLinkStyles}>Recipes</NavLink></li>
+          <li><NavLink to="/gallery" className={navLinkStyles}>Gallery</NavLink></li>
           <li><NavLink to="/contact" className={navLinkStyles}>Contact</NavLink></li>
         </ul>
         <button className='btn-primary-red'>Book a Class</button>
@@ -115,7 +115,7 @@ const Navbar = () => {
             </li>
 
             <li onClick={handleNav}>
-              <NavLink to="/recipes" className={mobileNavLinkStyles}>Recipes</NavLink>
+              <NavLink to="/gallery" className={mobileNavLinkStyles}>Gallery</NavLink>
             </li>
             <li onClick={handleNav}>
               <NavLink to="/contact" className={mobileNavLinkStyles}>Contact</NavLink>
