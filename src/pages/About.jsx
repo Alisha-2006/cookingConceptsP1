@@ -57,7 +57,7 @@ const About = () => {
                 and has been featured at food festivals and culinary platforms across Mumbai. Her workshops attract food lovers of all ages and are often supported by her family, reflecting her belief in passing traditions from one generation to the next. Her legacy is not just in the dishes she creates but in the knowledge she imparts, ensuring that Mumbai’s coastal culinary heritage continues to thrive in modern kitchens.
                 </>
             }
-            image={HeritageFood}
+            image="http://googleusercontent.com/image_collection/image_retrieval/7898923137845845329_0"
             reverse={false}
             />
 
